@@ -1,0 +1,15 @@
+{
+    "name": "jpietrzyk/voltdb-tools",
+    "description": "A Collection of tools intended to make using VoltDB with PHP simpler. Part of a proof of concept to create a Doctrine DBAL driver.",
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Philipp Pietrzyk",
+            "email": "mail@jpietrzyk.de"
+        }
+    ],
+    "require": {}
+}

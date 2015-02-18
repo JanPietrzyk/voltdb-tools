@@ -68,8 +68,13 @@ class InspectableQuery {
      * @param string $query
      */
     public function __construct($query) {
-        $this->queryParts = explode(' ', trim($query));
-        $this->sourceQuery = $query;
+        $this->sourceQuery = (string) $query;
+
+        if(!$this->sourceQuery) {
+            throw new \InvalidArgumentException('Missing required argument $query');
+        }
+        
+        $this->queryParts = explode(' ', trim($this->sourceQuery));
     }
 
     /**
